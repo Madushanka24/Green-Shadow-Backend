@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fafcf0e2-ffd6-4d58-bae9-2121d0af49b1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +41,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2pBpbVP8lBLCHyFu6zdpa3iX8Im" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,33 +52,62 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Gradle.Build Green-Shadow-backend.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GreenShadowBackendApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "android.gradle.sync.needed": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/IJSE/Semester 02/AAD/AAD Final/Green-Shadow-backend/src/main/java/lk/ijse/greenshadowbackend/entity",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/IJSE/Semester 02/AAD/AAD Final/Green-Shadow-Backend-roshen",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IJSE\Semester 02\AAD\AAD Final\Green-Shadow-backend\src\main\java\lk\ijse\greenshadowbackend\entity" />
-      <recent name="D:\IJSE\Semester 02\AAD\AAD Final\Green-Shadow-backend\src\main\resources" />
-      <recent name="D:\IJSE\Semester 02\AAD\AAD Final\Green-Shadow-backend\src\test" />
-      <recent name="D:\IJSE\Semester 02\AAD\AAD Final\Green-Shadow-backend" />
-      <recent name="D:\IJSE\Semester 02\AAD\AAD Final\Green-Shadow-backend\.idea" />
+      <recent name="D:\IJSE\Semester 02\AAD\AAD Final\Green-Shadow-backend\src\main\java\lk\ijse\greenshadowbackend\util" />
+      <recent name="D:\IJSE\Semester 02\AAD\AAD Final\Green-Shadow-backend\src\main\java\lk\ijse\greenshadowbackend\service\impl" />
+      <recent name="D:\IJSE\Semester 02\AAD\AAD Final\Green-Shadow-backend\src\main\java\lk\ijse\greenshadowbackend\service" />
+      <recent name="D:\IJSE\Semester 02\AAD\AAD Final\Green-Shadow-backend\src\main\java\lk\ijse\greenshadowbackend\exception" />
+      <recent name="D:\IJSE\Semester 02\AAD\AAD Final\Green-Shadow-backend\src\main\java\lk\ijse\greenshadowbackend\dto\impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IJSE\Semester 02\AAD\AAD Final\Green-Shadow-backend" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GreenShadowBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Green-Shadow-Backend.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.ijse.greenshadowbackend.GreenShadowBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,6 +118,10 @@
       <option name="presentableId" value="Default" />
       <updated>1732249395616</updated>
       <workItem from="1732249397316" duration="2256000" />
+      <workItem from="1732445040428" duration="1764000" />
+      <workItem from="1732603351236" duration="142000" />
+      <workItem from="1732603528461" duration="916000" />
+      <workItem from="1732611980241" duration="1627000" />
     </task>
     <servers />
   </component>
