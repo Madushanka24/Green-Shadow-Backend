@@ -1,4 +1,4 @@
-package lk.ijse.greenshadowbackend.customStatusCodes;
+package lk.ijse.greenshadowbackend.customStatusCode;
 
 import lk.ijse.greenshadowbackend.dto.VehicleStatus;
 import lombok.AllArgsConstructor;

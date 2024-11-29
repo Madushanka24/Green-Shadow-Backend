@@ -1,7 +1,8 @@
 package lk.ijse.greenshadowbackend.controller;
 
 import lk.ijse.greenshadowbackend.DataPersistException;
-import lk.ijse.greenshadowbackend.customStatusCodes.SelectedStaffErrorStatus;
+
+import lk.ijse.greenshadowbackend.customStatusCode.SelectedStaffErrorStatus;
 import lk.ijse.greenshadowbackend.dto.StaffStatus;
 import lk.ijse.greenshadowbackend.dto.impl.StaffDTO;
 import lk.ijse.greenshadowbackend.entity.Gender;
