@@ -1,7 +1,7 @@
 package lk.ijse.greenshadowbackend.service.impl;
 
 import jakarta.transaction.Transactional;
-import lk.ijse.greenshadowbackend.customStatusCodes.SelectedVehicleErrorStatus;
+import lk.ijse.greenshadowbackend.customStatusCode.SelectedVehicleErrorStatus;
 import lk.ijse.greenshadowbackend.dao.VehicleDAO;
 import lk.ijse.greenshadowbackend.dto.VehicleStatus;
 import lk.ijse.greenshadowbackend.dto.impl.VehicleDTO;
