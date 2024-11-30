@@ -1,7 +1,7 @@
 package lk.ijse.greenshadowbackend.service.impl;
 
 import jakarta.transaction.Transactional;
-import lk.ijse.greenshadowbackend.customStatusCodes.SelectedCropErrorStatus;
+import lk.ijse.greenshadowbackend.customStatusCode.SelectedCropErrorStatus;
 import lk.ijse.greenshadowbackend.dao.CropDAO;
 import lk.ijse.greenshadowbackend.dto.CropStatus;
 import lk.ijse.greenshadowbackend.dto.impl.CropDTO;
