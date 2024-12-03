@@ -1,7 +1,7 @@
 package lk.ijse.greenshadowbackend.controller;
 
 import lk.ijse.greenshadowbackend.DataPersistException;
-import lk.ijse.greenshadowbackend.customStatusCodes.SelectedEquipmentErrorStatus;
+import lk.ijse.greenshadowbackend.customStatusCode.SelectedEquipmentErrorStatus;
 import lk.ijse.greenshadowbackend.dto.EquipmentStatus;
 import lk.ijse.greenshadowbackend.dto.impl.EquipmentDTO;
 import lk.ijse.greenshadowbackend.exception.EquipmentNotFoundException;
