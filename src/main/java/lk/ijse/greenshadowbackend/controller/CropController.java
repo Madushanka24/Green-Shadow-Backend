@@ -1,7 +1,7 @@
 package lk.ijse.greenshadowbackend.controller;
 
 import lk.ijse.greenshadowbackend.DataPersistException;
-import lk.ijse.greenshadowbackend.customStatusCodes.SelectedCropErrorStatus;
+import lk.ijse.greenshadowbackend.customStatusCode.SelectedCropErrorStatus;
 import lk.ijse.greenshadowbackend.dto.CropStatus;
 import lk.ijse.greenshadowbackend.dto.impl.CropDTO;
 import lk.ijse.greenshadowbackend.exception.CropNotFoundException;
