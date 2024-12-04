@@ -1,7 +1,7 @@
 package lk.ijse.greenshadowbackend.controller;
 
 import lk.ijse.greenshadowbackend.DataPersistException;
-import lk.ijse.greenshadowbackend.customStatusCodes.SelectedVehicleErrorStatus;
+import lk.ijse.greenshadowbackend.customStatusCode.SelectedVehicleErrorStatus;
 import lk.ijse.greenshadowbackend.dto.VehicleStatus;
 import lk.ijse.greenshadowbackend.dto.impl.VehicleDTO;
 import lk.ijse.greenshadowbackend.exception.VehicleNotFoundException;
