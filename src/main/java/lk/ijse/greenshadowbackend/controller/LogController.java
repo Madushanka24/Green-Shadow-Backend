@@ -1,7 +1,7 @@
 package lk.ijse.greenshadowbackend.controller;
 
 import lk.ijse.greenshadowbackend.DataPersistException;
-import lk.ijse.greenshadowbackend.customStatusCodes.SelectedLogErrorStatus;
+import lk.ijse.greenshadowbackend.customStatusCode.SelectedLogErrorStatus;
 import lk.ijse.greenshadowbackend.dto.LogStatus;
 import lk.ijse.greenshadowbackend.dto.impl.LogDTO;
 import lk.ijse.greenshadowbackend.exception.LogNotFoundException;
