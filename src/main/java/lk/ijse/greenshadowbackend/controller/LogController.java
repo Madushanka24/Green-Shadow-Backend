@@ -14,9 +14,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.sql.Date;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost63342:/")
@@ -29,6 +31,7 @@ public class LogController {
     @Autowired
     private LogService logService;
 
+    @PreAuthorize("hasRole('MANAGER') or hasRole('SCIENTIST')")
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> saveLog(
@@ -84,6 +87,7 @@ public class LogController {
         return logService.getAllLogs();
     }
 
+    @PreAuthorize("hasRole('MANAGER') or hasRole('SCIENTIST')")
     @DeleteMapping(value = "/{logId}")
     public ResponseEntity<Void> deleteLog(@PathVariable ("logId") String logId){
         try {
@@ -101,6 +105,8 @@ public class LogController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+    @PreAuthorize("hasRole('MANAGER') or hasRole('SCIENTIST')")
     @PatchMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> updateLog(
