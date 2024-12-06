@@ -14,12 +14,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:63342/")
+@CrossOrigin(origins = "http://localhost63342:/")
 @RestController
 @RequestMapping("/api/v1/crop")
 public class CropController {
@@ -29,6 +30,7 @@ public class CropController {
     @Autowired
     private CropService cropService;
 
+    @PreAuthorize("hasRole('MANAGER') or hasRole('SCIENTIST')")
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> saveCrop(
@@ -96,12 +98,14 @@ public class CropController {
         return cropService.getCrop(cropId);
     }
 
+
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CropDTO> getAllCrops() {
         logger.info("All crops fetched");
         return cropService.getAllCrops();
     }
 
+    @PreAuthorize("hasRole('MANAGER') or hasRole('SCIENTIST')")
     @DeleteMapping(value = "/{cropId}")
     public ResponseEntity<Void> deleteCrop(@PathVariable ("cropId") String cropId){
         try {
@@ -119,6 +123,7 @@ public class CropController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+    @PreAuthorize("hasRole('MANAGER') or hasRole('SCIENTIST')")
     @PatchMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> updateCrop(
@@ -135,7 +140,7 @@ public class CropController {
             byte[] imageBytes = cropImage.getBytes();
             base64CropImage = AppUtil.picToBase64(imageBytes);
 
-            if (RegexProcess.cropIdMatcher(cropCode)) {
+            if (!RegexProcess.cropIdMatcher(cropCode)) {
                 logger.info("Crop ID is not valid");
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
