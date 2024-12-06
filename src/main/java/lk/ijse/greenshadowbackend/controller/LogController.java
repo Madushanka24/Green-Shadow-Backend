@@ -19,7 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "http://localhost63342:/")
 @RestController
 @RequestMapping("/api/v1/log")
 public class LogController {
