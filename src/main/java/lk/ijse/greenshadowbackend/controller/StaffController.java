@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,6 +29,7 @@ public class StaffController {
     @Autowired
     private StaffService staffService;
 
+    @PreAuthorize("hasRole('MANAGER') or hasRole('ADMIN')")
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> saveStaff(
             @RequestPart("staffId") String staffId,
@@ -68,14 +70,14 @@ public class StaffController {
                 logger.info("Gender is not valid");
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
-            if(!RegexProcess.staffJoinedDateMatcher(joinedDate)){
-                logger.info("Joined date is not valid");
-                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-            }
-            if(!RegexProcess.staffDobMatcher(dob)){
-                logger.info("Date of birth is not valid");
-                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-            }
+//            if(!RegexProcess.staffJoinedDateMatcher(joinedDate)){
+//                logger.info("Joined date is not valid");
+//                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//            }
+//            if(!RegexProcess.staffDobMatcher(dob)){
+//                logger.info("Date of birth is not valid");
+//                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//            }
             if(!RegexProcess.staffAddress2Matcher(addressLine2)) {
                 logger.info("Address line 2 is not valid");
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -149,6 +151,7 @@ public class StaffController {
         return staffService.getAllStaffs();
     }
 
+    @PreAuthorize("hasRole('MANAGER') or hasRole('ADMIN')")
     @DeleteMapping(value = "/{staffId}")
     public ResponseEntity<Void> deleteStaff(@PathVariable("staffId") String staffId) {
         try {
