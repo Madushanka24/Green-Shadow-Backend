@@ -1,7 +1,8 @@
 package lk.ijse.greenshadowbackend.service.impl;
 
 import jakarta.transaction.Transactional;
-import lk.ijse.greenshadowbackend.customStatusCode.SelectedEquipmentErrorStatus;
+import lk.ijse.greenshadowbackend.customStatusCodes.SelectedEquipmentErrorStatus;
+import lk.ijse.greenshadowbackend.customStatusCodes.SelectedUserErrorStatus;
 import lk.ijse.greenshadowbackend.dao.EquipmentDAO;
 import lk.ijse.greenshadowbackend.dto.EquipmentStatus;
 import lk.ijse.greenshadowbackend.dto.impl.EquipmentDTO;
