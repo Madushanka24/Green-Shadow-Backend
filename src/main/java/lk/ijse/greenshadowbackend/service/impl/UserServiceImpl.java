@@ -2,7 +2,7 @@ package lk.ijse.greenshadowbackend.service.impl;
 
 import jakarta.transaction.Transactional;
 import lk.ijse.greenshadowbackend.DataPersistException;
-import lk.ijse.greenshadowbackend.customStatusCodes.SelectedUserErrorStatus;
+import lk.ijse.greenshadowbackend.customStatusCode.SelectedUserErrorStatus;
 import lk.ijse.greenshadowbackend.dao.UserDAO;
 import lk.ijse.greenshadowbackend.dto.UserStatus;
 import lk.ijse.greenshadowbackend.dto.impl.UserDTO;
